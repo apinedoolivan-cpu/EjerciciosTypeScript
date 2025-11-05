@@ -1,9 +1,9 @@
 class Alumno {
-    nombre: string;
+    readonly nombre: string;
     edad: number;
     soltero: boolean;
 
-    constructor(nombre: string, edad: number, soltero : boolean){
+    constructor(nombre: string = "", edad: number = 0, soltero : boolean = true){
         this.nombre = nombre;
         this.edad = edad;
         this.soltero = soltero;
@@ -11,6 +11,7 @@ class Alumno {
 }
 const primerAlumno = new Alumno("Manolo", 67,true);
 const segundoAlumno = new Alumno("Ana", 43, false);
+const tercerAlumno = new Alumno();
 
 class Boton {
     posicionX: number;
