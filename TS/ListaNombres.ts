@@ -41,8 +41,8 @@ else console.log("No todos los nombres tiene mas de 2 caracteres en nombres01")
 if(todosMayorQue2_nombres02) console.log("\nTodos los nombres tiene mas de 2 caracteres en nombres02");
 else console.log("No todos los nombres tiene mas de 2 caracteres en nombres022");
 //3
-const filtrados01 = nombres01.filter((n) => n.toLowerCase() > "i");
-const filtrados02 = nombres02.filter((n) => n.toLowerCase() > "i");
+let filtrados01 = nombres01.filter((n) => n.toLowerCase() > "i");
+let filtrados02 = nombres02.filter((n) => n.toLowerCase() > "i");
 
 console.log("\nNombres01 mayores que 'i':", filtrados01);
 console.log("Nombres02 mayores que 'i':", filtrados02);
@@ -59,7 +59,7 @@ nombres02.forEach((n) => console.log(`${n} -> ${palindromo(n)}`));
 //5
 
 function buscarNombre(nombre: string, lista: string[], nombreLista: string) {
-  const indice = lista.indexOf(nombre);
+  let indice = lista.indexOf(nombre);
   if (indice > -1) {
     console.log(`\n${nombre} está en ${nombreLista} ${indice} veces.`);
   } else {
@@ -72,13 +72,13 @@ buscarNombre("Tanit", nombres02, "nombres02");
 buscarNombre("Jacinto", nombres01, "nombres01");
 buscarNombre("Jacinto", nombres02, "nombres02");
 //6
-const lista01Comas = nombres01.join(", ");
-const lista02Comas = nombres02.join(", ");
+let lista01Comas = nombres01.join(", ");
+let lista02Comas = nombres02.join(", ");
 
 console.log("\nnombres01:", lista01Comas);
 console.log("nombres02:", lista02Comas);
 //7
-const longitudes01 = nombres01.map((n) => n.length);
+let longitudes01 = nombres01.map((n) => n.length);
 console.log("\nLongitud de cada nombre en nombres01:", longitudes01);
 //8
 nombres01.pop();
@@ -101,26 +101,26 @@ longitudes01.reduce((acc, curr) => {
 
 console.log("\nRunning total de longitudes01:", runningTotal);
 //11
-const subarray01 = nombres01.slice(1, 7);
-const subarray02 = nombres02.slice(4, 6); 
-const nombres01modificado = subarray01.concat(subarray02);
+let subarray01 = nombres01.slice(1, 7);
+let subarray02 = nombres02.slice(4, 6); 
+let nombres01modificado = subarray01.concat(subarray02);
 
 console.log("\nSubarray nombres01 (1-7):", subarray01);
 console.log("Subarray nombres02 (4-6):", subarray02);
 console.log("Nuevo array combinado:", nombres01modificado);
 //12
-const algunoMayor6_01 = nombres01.some((n) => n.length > 6);
-const algunoMayor6_02 = nombres02.some((n) => n.length > 6);
+let algunoMayor6_01 = nombres01.some((n) => n.length > 6);
+let algunoMayor6_02 = nombres02.some((n) => n.length > 6);
 
 console.log("\n¿Algún nombre de nombres01 tiene más de 6 caracteres?", algunoMayor6_01);
 console.log("¿Algún nombre de nombres02 tiene más de 6 caracteres?", algunoMayor6_02);
 //13
-const asc01 = [...nombres01].sort();
-const desc01 = [...nombres01].sort().reverse();
-const asc02 = [...nombres02].sort();
-const desc02 = [...nombres02].sort().reverse();
+let nombres01_Ascendente = [...nombres01].sort();
+let nombres01_Descendente = [...nombres01].sort().reverse();
+let nombres02_Acendente = [...nombres02].sort();
+let nombres02_Descendente = [...nombres02].sort().reverse();
 
-console.log("\nOrden ascendente nombres01:", asc01);
-console.log("Orden descendente nombres01:", desc01);
-console.log("Orden ascendente nombres02:", asc02);
-console.log("Orden descendente nombres02:", desc02);
+console.log("\nOrden ascendente nombres01:", nombres01_Ascendente);
+console.log("Orden descendente nombres01:", nombres01_Descendente);
+console.log("Orden ascendente nombres02:", nombres02_Acendente);
+console.log("Orden descendente nombres02:", nombres02_Descendente);
