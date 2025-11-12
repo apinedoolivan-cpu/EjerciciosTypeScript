@@ -70,6 +70,8 @@ const Tipo = {
   Chulin: "Chulin",
   Jounin: "Jounin",
   Hokage: "Hokage",
+  Banzai: "Banzai",
+  Linkuei: "Linkuei",
 } as const;
 
 type Tipo = (typeof Tipo)[keyof typeof Tipo];
@@ -78,25 +80,35 @@ class FactoriaNinja {
   dameNinja(TipoNinja: Tipo): Ninja {
     switch (TipoNinja) {
       case Tipo.Genin:
-        return new Ninja(new Kama(), new ArmaduraPaja());
+        return new Ninja(new Shuriken(), new ArmaduraPaja());
       case Tipo.Chulin:
         return new Ninja(new Katana(), new ArmaduraBronce());
       case Tipo.Jounin:
         return new Ninja(new Katanaka(), new ArmaduraAcero());
       case Tipo.Hokage:
         return new Ninja(new Naginata(), new ArmaduraDiamante());
+      case Tipo.Banzai:
+        return new Ninja(new Kama(), new ArmaduraPaja());
+      case Tipo.Linkuei:
+        return new Ninja(new Kunai(), new ArmaduraAcero());
       default:
         return new Ninja(new Katana(), new ArmaduraBronce());
     }
   }
 }
-let ArrayNinjas: Ninja[]=[];
-let Ninja1 = new FactoriaNinja().dameNinja(Tipo.Genin);
-let Ninja2 = new FactoriaNinja().dameNinja(Tipo.Chulin);
-let Ninja3 = new FactoriaNinja().dameNinja(Tipo.Jounin);
-let Ninja4 = new FactoriaNinja().dameNinja(Tipo.Hokage);
+const ArrayNinjas: Ninja[]=[];
+const Ninja1 = new FactoriaNinja().dameNinja(Tipo.Genin);
+const Ninja2 = new FactoriaNinja().dameNinja(Tipo.Chulin);
+const Ninja3 = new FactoriaNinja().dameNinja(Tipo.Jounin);
+const Ninja4 = new FactoriaNinja().dameNinja(Tipo.Hokage);
+const Ninja5 = new FactoriaNinja().dameNinja(Tipo.Banzai);
+const Ninja6 = new FactoriaNinja().dameNinja(Tipo.Linkuei);
 
-ArrayNinjas.push(Ninja1, Ninja2, Ninja3, Ninja4)
+ArrayNinjas.push(Ninja1, Ninja2, Ninja3, Ninja4, Ninja5, Ninja6);
+
+ArrayNinjas.forEach(element => {
+    console.log("El ataque de este ninja es: "+ element.ataque.dameFuerzaDeAtaque())
+});
 
 ArrayNinjas.forEach(element => {
     console.log("La defensa de este ninja es: "+ element.defensa.dameDefensa())

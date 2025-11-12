@@ -73,5 +73,5 @@ class Humano extends Primate {
   }
 }
 
-let humano = new Humano(4,6, 2000, ["Alejandro", "Alex", "Ale"], 9, 1350, "Pinedo Oliván");
+const humano = new Humano(4,6, 2000, ["Alejandro", "Alex", "Ale"], 9, 1350, "Pinedo Oliván");
 console.log(humano.dameDatos());

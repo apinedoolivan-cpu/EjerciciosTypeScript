@@ -5,7 +5,7 @@ abstract class Regalo {
 
     constructor(id: string, precioCompra: number, precioVenta: number){
 
-        let regex = /^[A-Z]{3}[0-9]{4}$/;
+        const regex = /^[A-Z]{3}[0-9]{4}$/;
         if (!regex.test(id)) throw new Error("ID inválido");
         else this.id = id;
 
@@ -38,7 +38,7 @@ let precioCompraMedio = 0;
 let precioVentaMedio = 0;
 let beneficioTotal = 0;
 let beneficioMedio = 0;
-let coleccionRegalos : Regalo[] = [
+const coleccionRegalos : Regalo[] = [
     new JarronMing("ABC0001"),
     new JarronMing("DEF0002"),
     new TazaMong("GHI0003"),
@@ -57,6 +57,11 @@ function ordenarPorBeneficio()
 {
     return coleccionRegalos.sort((a, b) => a.beneficio() - b.beneficio());
 }
+
+
+ordenarPorCompra();
+ordenarPorVenta();
+
 function aplicarIVA(porcentaje: number) {
     coleccionRegalos.forEach(regalo => {
         regalo.precioCompra *= (1 + porcentaje);

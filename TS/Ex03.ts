@@ -103,16 +103,16 @@ class Pegatina implements Repuesto{
     }
 }
 
-let Rocio = new Alumno("Rocio",30,"76328278D",true);
-let Jacinto  =  new Profesor("Jacinto",23,"Medios");
-let Pilar = new Coordinador("Pila",34,"universitarios","mañana");
-let Alex = new Alumno("Alex", 24, "12356789A", true);
-let Javier = new Alumno("Javier", 25, "987654321C", true);
-let David = new Alumno("David", 20, "654987321A", true);
-let Ana = new Profesor("Ana", 34, "Medios");
+const Rocio = new Alumno("Rocio",30,"76328278D",true);
+const Jacinto  =  new Profesor("Jacinto",23,"Medios");
+const Pilar = new Coordinador("Pila",34,"universitarios","mañana");
+const Alex = new Alumno("Alex", 24, "12356789A", true);
+const Javier = new Alumno("Javier", 25, "987654321C", true);
+const David = new Alumno("David", 20, "654987321A", true);
+const Ana = new Profesor("Ana", 34, "Medios");
 
 let totalEdad = 0;
-let ArrayPersonas: Persona[] = [];
+const ArrayPersonas: Persona[] = [];
 ArrayPersonas.push(Rocio, Jacinto, Pilar, Alex, Javier, David, Ana);
 
 ArrayPersonas.forEach(element => {
@@ -125,14 +125,14 @@ mediaEdad = totalEdad/ArrayPersonas.length;
 
 console.log("La edad media es: "+mediaEdad.toFixed(2))
 
-let ArrayRespuestos: Repuesto[] = [];
-let Rueda1 = new Rueda();
-let Rueda2 = new Rueda();
-let Retrovisor1 = new Retrovisor();
-let Retrovisor2 = new Retrovisor();
-let Luz1 = new Luz();
-let Luz2 = new Luz();
-let Pegatina1 = new Pegatina();
+const ArrayRespuestos: Repuesto[] = [];
+const Rueda1 = new Rueda();
+const Rueda2 = new Rueda();
+const Retrovisor1 = new Retrovisor();
+const Retrovisor2 = new Retrovisor();
+const Luz1 = new Luz();
+const Luz2 = new Luz();
+const Pegatina1 = new Pegatina();
 
 ArrayRespuestos.push(Rueda1, Rueda2, Retrovisor1, Retrovisor2, Luz1, Luz2, Pegatina1);
 let precioTotal = 0;

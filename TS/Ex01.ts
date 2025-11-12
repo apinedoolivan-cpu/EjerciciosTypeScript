@@ -10,8 +10,11 @@ class Alumno {
     }
 }
 const primerAlumno = new Alumno("Manolo", 67,true);
+console.log(primerAlumno);
 const segundoAlumno = new Alumno("Ana", 43, false);
+console.log(segundoAlumno);
 const tercerAlumno = new Alumno();
+console.log(tercerAlumno);
 
 class Boton {
     posicionX: number;
@@ -30,8 +33,11 @@ class Boton {
 }
 
 const primerBoton = new Boton(1, 2, "Primer");
+console.log(primerBoton);
 const segundoBoton = new Boton(2, 2, "Segundo");
+console.log(segundoBoton);
 const holaBoton = new Boton(3, 2, "Hola");
+console.log(holaBoton);
 
 class ViewPoint {
     anchura: number;
@@ -50,6 +56,8 @@ class ViewPoint {
 }
 
 const primerViewpoint = new ViewPoint(20,20,"Red");
+console.log(primerViewpoint);
 const segundoViewpoint = new ViewPoint(20,20, "Blue");
+console.log(segundoViewpoint);
 
 export{}

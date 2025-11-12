@@ -41,7 +41,7 @@ class Concesionario implements IValorable{
         return total;
     }
 }
-let piezasCoche1: IValorable[] = [
+const piezasCoche1: IValorable[] = [
     new ComplementoCoche("Motor V8", 8000),
     new ComplementoCoche("Llantas aleación", 1200),
     new ComplementoCoche("Asientos cuero", 1500),
@@ -54,8 +54,8 @@ let piezasCoche1: IValorable[] = [
     new ComplementoCoche("Carroceria", 700),
     new ComplementoCoche("Volante", 300)
 ];
-let coche1 = new Coche("Deportivo X", piezasCoche1);
-let piezasCoche2: IValorable[] = [
+const coche1 = new Coche("Deportivo X", piezasCoche1);
+const piezasCoche2: IValorable[] = [
     new ComplementoCoche("Motor V6", 6000),
     new ComplementoCoche("Llantas acero", 800), 
     new ComplementoCoche("Asientos tela", 1200),
@@ -68,6 +68,6 @@ let piezasCoche2: IValorable[] = [
     new ComplementoCoche("Carroceria", 600),
     new ComplementoCoche("Volante", 250)
 ];
-let coche2 = new Coche("Sedán Y", piezasCoche2);
-let concesionario = new Concesionario([coche1, coche2]);
+const coche2 = new Coche("Sedán Y", piezasCoche2);
+const concesionario = new Concesionario([coche1, coche2]);
 concesionario.damePrecio(); 

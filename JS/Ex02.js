@@ -1,4 +1,5 @@
 "use strict";
+if (typeof exports === "undefined") { var exports = {}; }
 Object.defineProperty(exports, "__esModule", { value: true });
 var Cuadrado = /** @class */ (function () {
     function Cuadrado(posicionX, posicionY, longitud) {

@@ -130,7 +130,7 @@ class Aprendiz extends Persona{
     }
 }
 
-let personas: Persona[] = [
+const personas: Persona[] = [
     new Ejecutivo("Laura", 30),
     new Ejecutivo("Miguel", 20),
     new Secretario("Sofía", 20),
@@ -139,13 +139,13 @@ let personas: Persona[] = [
     new Aprendiz("Carlos", 24)
 ];
 
-let sueldoTotal = personas.reduce((total, persona) => total + persona.dameSueldo(), 0);
-let sueldoPromedio = sueldoTotal / personas.length;
+const sueldoTotal = personas.reduce((total, persona) => total + persona.dameSueldo(), 0);
+const sueldoPromedio = sueldoTotal / personas.length;
 
 console.log("Sueldo total : ", sueldoTotal);
 console.log("Sueldo promedio:", sueldoPromedio);
 
-let Arreglo: Figura [] = [new Cuadrado(4,5,6),new Circulo(3,3,4),new Triangulo(2,2,3,4,5),
+const Arreglo: Figura [] = [new Cuadrado(4,5,6),new Circulo(3,3,4),new Triangulo(2,2,3,4,5),
     new Rectangulo(5,6,3,4)];
     Arreglo.forEach(element => {
     console.log(element.damePerimetro());

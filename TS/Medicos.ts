@@ -37,7 +37,7 @@ class PacienteHospitalizado extends Paciente{
     }
 }
 
-let pacientes: Paciente[] = [
+const pacientes: Paciente[] = [
     new PacienteConsulta("Juan Pérez", 30, "12345678", "Cardiología"),
     new PacienteHospitalizado("María López", 45, "87654321", 5, "Neumonía"),
     new PacienteConsulta("Carlos Gómez", 28, "11223344", "Dermatología"),

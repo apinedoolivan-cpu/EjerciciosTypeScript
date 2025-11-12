@@ -16,7 +16,7 @@ class Envio {
         return this.precio*21/100
     }
     validarIdentificador(id: string): boolean { 
-        let expresion = /^[A-H]{2}\d{2}[I-Z]{2}$/;
+        const expresion = /^[A-H]{2}\d{2}[I-Z]{2}$/;
         return expresion.test(id);
     }
 }

@@ -192,9 +192,9 @@ class ListaNombres
     }   
 }
 
-let nombres01= new ListaNombres(new ProcesoCadenasV01(["Andra", "Aneu", "Arlet",
+const nombres01= new ListaNombres(new ProcesoCadenasV01(["Andra", "Aneu", "Arlet",
     "Ehub", "Indivar", "Samay", "Sanca", "Tanit", "Uxia", "Zenda"]));
-let nombres02= new ListaNombres(new ProcesoCadenasV01(["Abba", "Acfred", "Areu",
+const nombres02= new ListaNombres(new ProcesoCadenasV01(["Abba", "Acfred", "Areu",
     "Drac", "Guim", "Iol", "Kilian", "Mirt", "Yannick", "Zigot", "Tanit"]));
 
 nombres01.DameElementosMayorQueNumero(2);
