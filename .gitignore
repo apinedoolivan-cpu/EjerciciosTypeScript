@@ -1,0 +1,84 @@
+# ======================================
+# 📦 Node.js essentials
+# ======================================
+
+# Dependencias instaladas (se pueden reinstalar con npm install)
+node_modules/
+
+# ======================================
+# ⚙️ Configuración y dependencias
+# ======================================
+
+# Bloquea el package-lock.json en la raíz del proyecto (usa ! si quieres incluir algunos)
+package-lock.json
+package.json
+
+# Archivos de configuración de ESLint
+.eslintrc
+.eslintrc.js
+.eslintrc.cjs
+.eslintrc.json
+.eslintrc.yml
+.eslintrc.yaml
+eslint.config.mjs
+eslint.config.mts
+
+# Otras herramientas de linting o formato
+.prettierrc
+.prettierignore
+.stylelintrc*
+.editorconfig
+
+# ======================================
+# 🧩 Archivos de entorno
+# ======================================
+
+.env
+.env.local
+.env.*.local
+
+# ======================================
+# 🏗️ Archivos de compilación / distribución
+# ======================================
+
+dist/
+build/
+out/
+
+# ======================================
+# 🧠 Cachés y coberturas
+# ======================================
+
+.cache/
+.tmp/
+coverage/
+.nyc_output/
+
+# ======================================
+# 🧰 Logs y depuración
+# ======================================
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ======================================
+# 🧑‍💻 Configuración de IDEs y editores
+# ======================================
+
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ======================================
+# 💻 Archivos del sistema operativo
+# ======================================
+
+.DS_Store
+Thumbs.db
