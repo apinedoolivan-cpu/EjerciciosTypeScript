@@ -1,7 +1,6 @@
 # 🧩 Proyecto TypeScript — Configuración completa de ESLint con pnpm
 
-Este repositorio contiene ejercicios en **TypeScript** y una guía **completa** (en un solo archivo) para instalar, configurar y solucionar problemas de **ESLint** usando **pnpm**.  
-Toda la información necesaria está en este README: instalación, configuración, scripts, errores comunes y sus soluciones.
+Este repositorio contiene ejercicios en **TypeScript** y una guía **completa** para instalar, configurar y solucionar problemas de **ESLint** usando **pnpm**.  
 
 ---
 
@@ -234,6 +233,6 @@ Este proyecto está bajo la licencia **MIT**.
 
 ---
 
-👨‍💻 **Autor:** Alejandro  
+👨‍💻 **Autor:** Alejandro Pinedo
 📧 **Contacto:** apinedoolivan@gmail.com  
 🌐 **GitHub:** [@apinedoolivan-cpu](https://github.com/apinedoolivan-cpu)
